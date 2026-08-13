@@ -26,13 +26,6 @@
         "usesNonExemptEncryption": false
       }
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "KP2015GS"
-    },
     "web": {
       "favicon": "./assets/images/favicon.png"
     },
@@ -41,6 +34,9 @@
       "eas": {
         "projectId": "06796d35-a662-45fd-a6e6-4e5e9ff34187"
       }
+    },
+    "android": {
+      "package": "com.kiamoz.KP2015GS"
     }
   }
 }

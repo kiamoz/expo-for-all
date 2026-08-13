@@ -28,6 +28,10 @@ yarn-error.*
 **/*.dSYM.zip
 **/*.mobileprovision
 
+
+**/android/
+**/ios/
+
 # Android
 **/android/.gradle/
 **/android/build/
