@@ -1,0 +1,22 @@
+{
+    "sourceFile": "navigation/input_Navigator.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1709292059971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710358781672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         name=\"TabOneScreen\"\n         component={input}\n         options={{ headerTitle: 'Inputs' ,\n         headerStyle: {\n-          backgroundColor: '#017640',\n+          backgroundColor: '#2bb9ec',\n         },\n         headerTintColor: '#fff',\n         headerTitleStyle: {\n           fontWeight: 'bold',\n"
+                }
+            ],
+            "date": 1709292059971,
+            "name": "Commit-0",
+            "content": "import { Ionicons } from '@expo/vector-icons';\nimport { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\nimport { createStackNavigator } from '@react-navigation/stack';\nimport * as React from 'react';\n\nimport Colors from '../constants/Colors';\nimport useColorScheme from '../hooks/useColorScheme';\n\nimport input from '../screens/input';\n\nimport { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';\n\nconst BottomTab = createBottomTabNavigator<BottomTabParamList>();\n\nexport default function BottomTabNavigator() {\n  const colorScheme = useColorScheme();\n\n  return (\n    <BottomTab.Navigator\n      initialRouteName=\"TabOne\"\n      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>\n      <BottomTab.Screen\n        name=\" \"\n        component={TabOneNavigator}\n        \n      />\n    \n    </BottomTab.Navigator>\n  );\n}\n\n// You can explore the built-in icon families and icons on the web at:\n// https://icons.expo.fyi/\nfunction TabBarIcon(props: { name: string; color: string }) {\n  return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;\n}\n\n// Each tab has its own navigation stack, you can read more about this pattern here:\n// https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab\nconst TabOneStack = createStackNavigator<TabOneParamList>();\n\nfunction TabOneNavigator() {\n  return (\n    <TabOneStack.Navigator>\n      <TabOneStack.Screen\n        name=\"TabOneScreen\"\n        component={input}\n        options={{ headerTitle: 'Inputs' ,\n        headerStyle: {\n          backgroundColor: '#017640',\n        },\n        headerTintColor: '#fff',\n        headerTitleStyle: {\n          fontWeight: 'bold',\n        },\n      \n      }}\n      />\n    </TabOneStack.Navigator>\n  );\n}\n\n\n\n"
+        }
+    ]
+}

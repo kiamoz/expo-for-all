@@ -1,0 +1,34 @@
+{
+    "sourceFile": "app.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1709291107274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1709291115431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n {\n   \"expo\": {\n     \"name\": \"FC-2000\",\n     \"slug\": \"FC2000\",\n-    \"version\": \"12.2.0\",\n+    \"version\": \"14.2.0\",\n     \"orientation\": \"portrait\",\n     \"icon\": \"./assets/images/icon.png\",\n     \"scheme\": \"myapp\",\n     \"userInterfaceStyle\": \"automatic\",\n"
+                },
+                {
+                    "date": 1710187589944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n {\n   \"expo\": {\n     \"name\": \"FC-2000\",\n     \"slug\": \"FC2000\",\n-    \"version\": \"14.2.0\",\n+    \"version\": \"14.3.0\",\n     \"orientation\": \"portrait\",\n     \"icon\": \"./assets/images/icon.png\",\n     \"scheme\": \"myapp\",\n     \"userInterfaceStyle\": \"automatic\",\n@@ -19,9 +19,9 @@\n       \"**/*\"\n     ],\n     \"ios\": {\n       \"supportsTablet\": false,\n-      \"buildNumber\": \"15\",\n+      \"buildNumber\": \"17\",\n       \"bundleIdentifier\": \"FC2000\",\n       \"config\": {\n         \"usesNonExemptEncryption\": false\n       }\n"
+                },
+                {
+                    "date": 1710358260080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {\n   \"expo\": {\n     \"name\": \"FC-2000\",\n-    \"slug\": \"FC2000\",\n+    \"slug\": \"KP2015GS\",\n     \"version\": \"14.3.0\",\n     \"orientation\": \"portrait\",\n     \"icon\": \"./assets/images/icon.png\",\n     \"scheme\": \"myapp\",\n@@ -20,9 +20,9 @@\n     ],\n     \"ios\": {\n       \"supportsTablet\": false,\n       \"buildNumber\": \"17\",\n-      \"bundleIdentifier\": \"FC2000\",\n+      \"bundleIdentifier\": \"KP2015GS\",\n       \"config\": {\n         \"usesNonExemptEncryption\": false\n       }\n     },\n@@ -30,9 +30,9 @@\n       \"adaptiveIcon\": {\n         \"foregroundImage\": \"./assets/images/adaptive-icon.png\",\n         \"backgroundColor\": \"#FFFFFF\"\n       },\n-      \"package\": \"FC2000\"\n+      \"package\": \"KP2015GS\"\n     },\n     \"web\": {\n       \"favicon\": \"./assets/images/favicon.png\"\n     },\n"
+                },
+                {
+                    "date": 1710359129621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {\n   \"expo\": {\n-    \"name\": \"FC-2000\",\n+    \"name\": \"Keeper security alarm\",\n     \"slug\": \"KP2015GS\",\n     \"version\": \"14.3.0\",\n     \"orientation\": \"portrait\",\n     \"icon\": \"./assets/images/icon.png\",\n@@ -19,9 +19,9 @@\n       \"**/*\"\n     ],\n     \"ios\": {\n       \"supportsTablet\": false,\n-      \"buildNumber\": \"17\",\n+      \"buildNumber\": \"18\",\n       \"bundleIdentifier\": \"KP2015GS\",\n       \"config\": {\n         \"usesNonExemptEncryption\": false\n       }\n@@ -37,10 +37,8 @@\n       \"favicon\": \"./assets/images/favicon.png\"\n     },\n     \"description\": \"\",\n     \"extra\": {\n-      \"eas\": {\n-        \"projectId\": \"e692b950-3f80-45bb-a6ad-ce78d43d0fea\"\n-      }\n+     \n     }\n   }\n }\n"
+                }
+            ],
+            "date": 1709291107274,
+            "name": "Commit-0",
+            "content": "{\n  \"expo\": {\n    \"name\": \"FC-2000\",\n    \"slug\": \"FC2000\",\n    \"version\": \"12.2.0\",\n    \"orientation\": \"portrait\",\n    \"icon\": \"./assets/images/icon.png\",\n    \"scheme\": \"myapp\",\n    \"userInterfaceStyle\": \"automatic\",\n    \"splash\": {\n      \"image\": \"./assets/images/splash.png\",\n      \"resizeMode\": \"contain\",\n      \"backgroundColor\": \"#ffffff\"\n    },\n    \"updates\": {\n      \"fallbackToCacheTimeout\": 0\n    },\n    \"assetBundlePatterns\": [\n      \"**/*\"\n    ],\n    \"ios\": {\n      \"supportsTablet\": false,\n      \"buildNumber\": \"15\",\n      \"bundleIdentifier\": \"FC2000\",\n      \"config\": {\n        \"usesNonExemptEncryption\": false\n      }\n    },\n    \"android\": {\n      \"adaptiveIcon\": {\n        \"foregroundImage\": \"./assets/images/adaptive-icon.png\",\n        \"backgroundColor\": \"#FFFFFF\"\n      },\n      \"package\": \"FC2000\"\n    },\n    \"web\": {\n      \"favicon\": \"./assets/images/favicon.png\"\n    },\n    \"description\": \"\",\n    \"extra\": {\n      \"eas\": {\n        \"projectId\": \"e692b950-3f80-45bb-a6ad-ce78d43d0fea\"\n      }\n    }\n  }\n}\n"
+        }
+    ]
+}

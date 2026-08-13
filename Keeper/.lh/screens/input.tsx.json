@@ -1,0 +1,22 @@
+{
+    "sourceFile": "screens/input.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1709292059969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710358781663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n     marginTop: 10,\n     paddingTop: 10,\n     padding: 30,\n     paddingBottom: 10,\n-    backgroundColor: '#017640',\n+    backgroundColor: '#2bb9ec',\n     borderRadius: 10,\n     borderWidth: 1,\n     borderColor: '#fff'\n   },\n@@ -110,9 +110,9 @@\n     paddingRight: 10\n   },\n \n   btn: {\n-    backgroundColor: '#017640',\n+    backgroundColor: '#2bb9ec',\n   },\n \n   title: {\n     fontSize: 17,\n@@ -128,9 +128,9 @@\n     width: '80%',\n     height: 44,\n     padding: 10,\n     borderWidth: 2,\n-    borderColor: '#017640',\n+    borderColor: '#2bb9ec',\n     marginBottom: 10,\n   },\n \n   mianimg: {\n"
+                }
+            ],
+            "date": 1709292059969,
+            "name": "Commit-0",
+            "content": "import * as React from 'react';\nimport { StyleSheet, Button, TextInput, TouchableOpacity, Image } from 'react-native';\nimport { useState } from 'react';\nimport avis_instance from \"../components/AVIS\";\nimport EditScreenInfo from '../components/EditScreenInfo';\nimport { Text, View, } from '../components/Themed';\nimport { Picker } from '@react-native-picker/picker';\nimport SegmentedControl from '@react-native-community/segmented-control';\n\n\n\n\nexport default function TabOneScreen({\n  navigation,\n}) {\n  //const { navigate } = this.props.navigation;\n\n \n  function check_mtn_mci(){\n    if(B1==2){\n      return \"mci\";\n    }else{\n      return \"mtn\";\n    }\n  }\n\n  function get_antena(){\n    \n      avis_instance.send_sms(\"CT\");\n    \n  }\n\n\n\n\n  return (\n    <View style={styles.container}>\n\n      <View style={styles.separator} lightColor=\"#eee\" darkColor=\"rgba(255,255,255,0.1)\" />\n\n      <View style={{\n\n        width: '100%',\n        height: 200,\n        justifyContent: 'center',\n        flexDirection: \"row\",\n        flexWrap: \"wrap\",\n        backgroundColor: \"#FFF\",\n      }}>\n        <TouchableOpacity\n            style={styles.loginScreenButton}\n            onPress={() =>\n              get_antena()\n              //navigation.navigate('HOME')\n            }\n\n\n          >\n            <Text style={styles.loginText}>GET INPUTS NAME</Text>\n          </TouchableOpacity>\n        \n\n      </View>\n\n\n      \n\n      \n      \n\n\n\n\n    </View>\n\n  );\n}\n\nconst styles = StyleSheet.create({\n  segment__: {\n    margin: 1,\n\n\n  },\n  main_btn: {\n    margin: 5,\n  },\n  container: {\n    backgroundColor: \"#FFF\",\n    flex: 1,\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n  loginScreenButton: {\n    marginRight: 40,\n    marginLeft: 40,\n    marginTop: 10,\n    paddingTop: 10,\n    padding: 30,\n    paddingBottom: 10,\n    backgroundColor: '#017640',\n    borderRadius: 10,\n    borderWidth: 1,\n    borderColor: '#fff'\n  },\n  loginText: {\n    color: '#fff',\n    textAlign: 'center',\n    paddingLeft: 10,\n    paddingRight: 10\n  },\n\n  btn: {\n    backgroundColor: '#017640',\n  },\n\n  title: {\n    fontSize: 17,\n    fontWeight: 'bold',\n  },\n  separator: {\n    marginVertical: 30,\n    height: 1,\n    width: '80%',\n  },\n\n  input: {\n    width: '80%',\n    height: 44,\n    padding: 10,\n    borderWidth: 2,\n    borderColor: '#017640',\n    marginBottom: 10,\n  },\n\n  mianimg: {\n    width: 100, height: 100\n  },\n});\n\n"
+        }
+    ]
+}

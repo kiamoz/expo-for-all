@@ -1,0 +1,22 @@
+{
+    "sourceFile": "navigation/BottomTabNavigator.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1709292059979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710358781675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,68 @@\n+import { Ionicons } from '@expo/vector-icons';\n+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\n+import { createStackNavigator } from '@react-navigation/stack';\n+import * as React from 'react';\n+\n+import Colors from '../constants/Colors';\n+import useColorScheme from '../hooks/useColorScheme';\n+import setting from '../screens/setting';\n+import TabOneScreen from '../screens/TabOneScreen';\n+import TabTwoScreen from '../screens/TabTwoScreen';\n+import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';\n+\n+const BottomTab = createBottomTabNavigator<BottomTabParamList>();\n+\n+export default function BottomTabNavigator(navigation) {\n+  const colorScheme = useColorScheme();\n+\n+  return (\n+    <BottomTab.Navigator\n+      initialRouteName=\"TabOne\"\n+      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>\n+      <BottomTab.Screen\n+        name=\" \"\n+        component={TabOneNavigator}\n+        \n+      />\n+    \n+    </BottomTab.Navigator>\n+  );\n+}\n+\n+const TabOneStack = createStackNavigator<TabOneParamList>();\n+\n+function TabOneNavigator() {\n+ \n+  return (\n+    <TabOneStack.Navigator>\n+      <TabOneStack.Screen\n+        name=\"TabOneScreen\"\n+        component={TabOneScreen}\n+        options={{ headerTitle: 'Device Managment' ,\n+        headerStyle: {\n+          backgroundColor: '#2bb9ec',\n+        },\n+        headerTintColor: '#fff',\n+        headerTitleStyle: {\n+          fontWeight: 'bold',\n+        },\n+      \n+      }}\n+      />\n+    </TabOneStack.Navigator>\n+  );\n+}\n+\n+const TabTwoStack = createStackNavigator<TabTwoParamList>();\n+\n+function TabTwoNavigator() {\n+  return (\n+    <TabTwoStack.Navigator>\n+      <TabTwoStack.Screen\n+        name=\"TabTwoScreen\"\n+        component={setting}\n+        options={{ headerTitle: 'Tab Two Title~~' }}\n+      />\n+    </TabTwoStack.Navigator>\n+  );\n+}\n"
+                }
+            ],
+            "date": 1709292059979,
+            "name": "Commit-0",
+            "content": "import { Ionicons } from '@expo/vector-icons';\nimport { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\nimport { createStackNavigator } from '@react-navigation/stack';\nimport * as React from 'react';\n\nimport Colors from '../constants/Colors';\nimport useColorScheme from '../hooks/useColorScheme';\nimport setting from '../screens/setting';\nimport TabOneScreen from '../screens/TabOneScreen';\nimport TabTwoScreen from '../screens/TabTwoScreen';\nimport { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';\n\nconst BottomTab = createBottomTabNavigator<BottomTabParamList>();\n\nexport default function BottomTabNavigator(navigation) {\n  const colorScheme = useColorScheme();\n\n  return (\n    <BottomTab.Navigator\n      initialRouteName=\"TabOne\"\n      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>\n      <BottomTab.Screen\n        name=\" \"\n        component={TabOneNavigator}\n        \n      />\n    \n    </BottomTab.Navigator>\n  );\n}\n\nconst TabOneStack = createStackNavigator<TabOneParamList>();\n\nfunction TabOneNavigator() {\n \n  return (\n    <TabOneStack.Navigator>\n      <TabOneStack.Screen\n        name=\"TabOneScreen\"\n        component={TabOneScreen}\n        options={{ headerTitle: 'Device Managment' ,\n        headerStyle: {\n          backgroundColor: '#017640',\n        },\n        headerTintColor: '#fff',\n        headerTitleStyle: {\n          fontWeight: 'bold',\n        },\n      \n      }}\n      />\n    </TabOneStack.Navigator>\n  );\n}\n\nconst TabTwoStack = createStackNavigator<TabTwoParamList>();\n\nfunction TabTwoNavigator() {\n  return (\n    <TabTwoStack.Navigator>\n      <TabTwoStack.Screen\n        name=\"TabTwoScreen\"\n        component={setting}\n        options={{ headerTitle: 'Tab Two Title~~' }}\n      />\n    </TabTwoStack.Navigator>\n  );\n}\n"
+        }
+    ]
+}

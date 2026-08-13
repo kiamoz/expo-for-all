@@ -1,0 +1,57 @@
+# Dependencies (all folders)
+**/node_modules/
+
+# Expo
+**/.expo/
+**/.expo-shared/
+
+# EAS
+**/.eas/
+**/eas-build/
+
+# Build files
+**/web-build/
+**/dist/
+**/build/
+
+# Logs
+**/*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# iOS
+**/ios/Pods/
+**/ios/build/
+**/*.ipa
+**/*.dSYM
+**/*.dSYM.zip
+**/*.mobileprovision
+
+# Android
+**/android/.gradle/
+**/android/build/
+**/android/app/build/
+**/*.apk
+**/*.aab
+**/*.jks
+**/*.keystore
+
+# Secrets / Certificates
+**/*.p8
+**/*.p12
+**/*.key
+**/.env
+**/.env.*
+
+# macOS
+**/.DS_Store
+
+# Editors
+**/.vscode/
+**/.idea/
+
+# Temporary
+**/*.swp
+**/*.swo
+**/*.orig.*
